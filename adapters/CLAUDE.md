@@ -28,3 +28,6 @@
 - **vercel-react-best-practices**: Vercel 提供的 React 和 Next.js 最佳实践。当编写、审查或重构 React/Next.js 代码时触发。 → 详见 skills/vercel-react-best-practices/SKILL.md
 - **web-design-guidelines**: 审查代码是否符合 Web 界面设计指南。要求“审查我的 UI/UX ”或检查无障碍时触发。 → 详见 skills/web-design-guidelines/SKILL.md
 - **frontend-design**: 创建高设计感/反套路化的前端 UI 界面。要求构建 Web 组件、美化 UI 或写网页时触发。 → 详见 skills/frontend-design/SKILL.md
+- **webapp-testing**: 利用 Playwright 自动化测试 Web 应用程序。 → 详见 skills/webapp-testing/SKILL.md
+- **frontend-code-review**: 前端代码审查助手。涵盖业务逻辑、组件性能及架构规范检查。 → 详见 skills/frontend-code-review/SKILL.md
+- **fullstack-developer**: 全栈 Web 开发者知识库（React/Next/Node/DB）。 → 详见 skills/fullstack-developer/SKILL.md
