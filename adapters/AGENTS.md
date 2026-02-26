@@ -31,3 +31,4 @@
 - **find-skills**: 帮助用户发现和安装生态系统中的技能。当用户询问“我该如何做某事”或“寻找某事技能”时触发。 -> 详见 skills/find-skills/SKILL.md
 - **vercel-react-best-practices**: Vercel 提供的 React 和 Next.js 最佳实践。当编写、审查或重构 React/Next.js 代码时触发。 -> 详见 skills/vercel-react-best-practices/SKILL.md
 - **web-design-guidelines**: 审查代码是否符合 Web 界面设计指南。要求“审查我的 UI/UX ”或检查无障碍时触发。 -> 详见 skills/web-design-guidelines/SKILL.md
+- **frontend-design**: 创建高设计感的前端界面，打破常规 AI 审美。要求构建 Web 组件、美化 UI 或写网页时触发。 -> 详见 skills/frontend-design/SKILL.md
