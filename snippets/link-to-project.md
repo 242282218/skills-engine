@@ -52,7 +52,12 @@
 
 步骤：
 1. 克隆到临时目录
-2. 用仓库中的最新文件覆盖当前项目中的：
+2. 先对比差异，不要直接覆盖：
+   - 逐个比较 仓库最新版 与 本地 .skills-engine/ 中的文件
+   - 列出新增、修改、删除的文件清单和关键变化摘要
+   - 同样比较根目录的 CLAUDE.md、AGENTS.md、GEMINI.md 与仓库 adapters/ 下的版本
+3. 向我展示差异摘要，等我确认后再执行覆盖
+4. 确认后，用仓库中的最新文件覆盖：
    - .skills-engine/core/
    - .skills-engine/skills/（不含 _TEMPLATE）
    - .skills-engine/snippets/
@@ -60,12 +65,12 @@
    - CLAUDE.md（用 adapters/CLAUDE.md 替换）
    - AGENTS.md（用 adapters/AGENTS.md 替换）
    - GEMINI.md（用 adapters/GEMINI.md 替换）
-3. 如果项目使用 Gemini，同步更新 .gemini/skills/
-4. 如果项目使用 Trae，同步更新：
+5. 如果项目使用 Gemini，同步更新 .gemini/skills/
+6. 如果项目使用 Trae，同步更新：
    - .trae/rules/project_rules.md（用 AGENTS.md 内容替换）
    - .trae/skills/（用 .skills-engine/skills/ 内容替换）
-5. 清理临时目录
-6. 告诉我更新了哪些文件，哪些有变化
+7. 清理临时目录
+8. 告诉我最终更新了哪些文件
 ```
 
 ---
