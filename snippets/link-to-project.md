@@ -1,60 +1,51 @@
-# 提示词 — 链接 skills-engine 到当前项目
+# 提示词 — 从 GitHub 部署 skills-engine 到当前项目
 
-> 在新项目中把下面这段话发给 AI，它会自动帮你执行链接。
-
----
-
-## 使用方式
-
-复制下方提示词，粘贴给 AI 发送即可。根据你的系统选 Windows 或 Linux 版本。
+> 在新项目中把下面这段话发给 AI 即可。
+> 使用前请先把 skills-engine 推送到 GitHub，然后替换下方 `<GITHUB_URL>`。
 
 ---
 
-## Windows 版
+## 提示词
 
 ```
-请帮我将 skills-engine 链接到当前项目。
+请帮我部署 skills-engine 到当前项目。
+
+从这个仓库获取：<GITHUB_URL>
 
 步骤：
-1. 找到 skills-engine 仓库路径（位于 C:\Users\24228\Desktop\skills_project）
-2. 当前项目路径就是工作区根目录
-3. 执行命令：& "C:\Users\24228\Desktop\skills_project\setup.ps1" -TargetProject "<当前项目绝对路径>"
-4. 检查执行结果，确认以下文件/目录已创建：
-   - .gemini/skills/（目录链接）
-   - CLAUDE.md
-   - AGENTS.md
-   - .trae/rules/project_rules.md
-5. 将这些链接/生成的文件加入 .gitignore（它们不应该提交到项目仓库）
-6. 告诉我链接结果
-```
+1. 将仓库克隆到系统临时目录
+2. 将以下文件复制到当前项目根目录，保持原始目录结构：
+   - .gemini/skills/ ← 复制仓库中的 skills/ 目录内容到这里（不含 _TEMPLATE）
+   - CLAUDE.md ← 复制 adapters/CLAUDE.md
+   - AGENTS.md ← 复制 adapters/AGENTS.md
+   - GEMINI.md ← 复制 adapters/GEMINI.md
+3. 将以下内容追加到 .gitignore（如果不存在则创建）：
+   CLAUDE.md
+   AGENTS.md
+   GEMINI.md
+   .gemini/skills/
+4. 清理临时目录
+5. 告诉我部署了哪些文件
 
-## Linux / macOS 版
-
-```
-请帮我将 skills-engine 链接到当前项目。
-
-步骤：
-1. 找到 skills-engine 仓库路径（通常在 ~/skills-engine 或 ~/Desktop/skills_project）
-2. 当前项目路径就是工作区根目录
-3. 执行命令：bash <skills-engine路径>/setup.sh "<当前项目绝对路径>"
-4. 检查执行结果，确认以下文件/目录已创建：
-   - .gemini/skills/（符号链接）
-   - CLAUDE.md
-   - AGENTS.md
-   - .trae/rules/project_rules.md
-5. 将这些链接/生成的文件加入 .gitignore（它们不应该提交到项目仓库）
-6. 告诉我链接结果
+注意：不要覆盖项目中已存在的同名文件，如果有冲突先问我。
 ```
 
 ---
 
-## 推荐追加到 .gitignore 的内容
+## 更新时的提示词
 
 ```
-# skills-engine links
-CLAUDE.md
-AGENTS.md
-GEMINI.md
-.gemini/skills
-.trae/rules/project_rules.md
+请帮我更新 skills-engine。
+
+从这个仓库获取最新版：<GITHUB_URL>
+
+步骤：
+1. 克隆到临时目录
+2. 用仓库中的最新文件覆盖当前项目中的：
+   - .gemini/skills/ 下所有 skill（用 skills/ 目录内容替换，不含 _TEMPLATE）
+   - CLAUDE.md（用 adapters/CLAUDE.md 替换）
+   - AGENTS.md（用 adapters/AGENTS.md 替换）
+   - GEMINI.md（用 adapters/GEMINI.md 替换）
+3. 清理临时目录
+4. 告诉我更新了哪些文件，哪些有变化
 ```
