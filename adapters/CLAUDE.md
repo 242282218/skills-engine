@@ -24,3 +24,4 @@
 
 - **skill-creator**: 创建和更新有效技能的指南。当用户想添加或修改专门工作流/知识技能时触发。 → 详见 skills/skill-creator/SKILL.md
 - **skill-installer**: 从精选列表或 GitHub 仓库等路径安装技能。当用户要求列出或安装技能时触发。 → 详见 skills/skill-installer/SKILL.md
+- **find-skills**: 帮助用户发现和安装生态系统中的技能。当用户询问“我该如何做某事”或“寻找某事技能”时触发。 → 详见 skills/find-skills/SKILL.md
