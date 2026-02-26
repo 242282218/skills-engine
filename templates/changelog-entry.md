@@ -1,3 +1,12 @@
-# changelog-entry.md — 变更条目模板
+# 变更条目模板
 
-> 待填充
+<!-- 复制到 CHANGELOG.md 对应版本下使用 -->
+
+### Added
+- 
+
+### Changed
+- 
+
+### Fixed
+- 
