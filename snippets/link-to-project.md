@@ -1,7 +1,6 @@
 # 提示词 — 从 GitHub 部署 skills-engine 到当前项目
 
 > 在新项目中把下面这段话发给 AI 即可。
-> 使用前请先把 skills-engine 推送到 GitHub，然后替换下方 `<GITHUB_URL>`。
 
 ---
 
@@ -10,7 +9,7 @@
 ```
 请帮我部署 skills-engine 到当前项目。
 
-从这个仓库获取：<GITHUB_URL>
+从这个仓库获取：https://github.com/242282218/skills-engine
 
 步骤：
 1. 将仓库克隆到系统临时目录
@@ -37,7 +36,7 @@
 ```
 请帮我更新 skills-engine。
 
-从这个仓库获取最新版：<GITHUB_URL>
+从这个仓库获取最新版：https://github.com/242282218/skills-engine
 
 步骤：
 1. 克隆到临时目录
