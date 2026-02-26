@@ -23,3 +23,4 @@
 > 新增技能时在此追加：`- **skill-name**: 描述 → 详见 skills/skill-name/SKILL.md`
 
 - **skill-creator**: 创建和更新有效技能的指南。当用户想添加或修改专门工作流/知识技能时触发。 → 详见 skills/skill-creator/SKILL.md
+- **skill-installer**: 从精选列表或 GitHub 仓库等路径安装技能。当用户要求列出或安装技能时触发。 → 详见 skills/skill-installer/SKILL.md
