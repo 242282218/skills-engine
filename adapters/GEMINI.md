@@ -7,8 +7,8 @@
 
 - 先说方案再动手，有疑问只问一个问题
 - 执行中小步推进，每步验证，不动任务范围外的文件
-- 技术选型遵循 `core/CONVENTIONS.md`
+- 技术选型遵循 `.skills-engine/core/CONVENTIONS.md`
 
 ## 个人规则
 
-见 `core/RULES.md`。
+见 `.skills-engine/core/RULES.md`。
