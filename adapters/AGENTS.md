@@ -26,6 +26,4 @@
 ## 可用技能
 
 > 技能存放于 `skills/`，每个子目录含 `SKILL.md`。
-> 新增技能时在此处追加一行：`- **skill-name**: 一句话描述`
-
-*(暂无技能，待添加)*
+- **skill-creator**: 创建和更新有效技能的指南。当用户想添加或修改专门工作流/知识技能时触发。 -> 详见 skills/skill-creator/SKILL.md

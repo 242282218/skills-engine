@@ -22,4 +22,4 @@
 
 > 新增技能时在此追加：`- **skill-name**: 描述 → 详见 skills/skill-name/SKILL.md`
 
-*(暂无技能，待添加)*
+- **skill-creator**: 创建和更新有效技能的指南。当用户想添加或修改专门工作流/知识技能时触发。 → 详见 skills/skill-creator/SKILL.md
