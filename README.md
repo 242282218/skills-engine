@@ -39,20 +39,31 @@ your-project/
 
 当前已集齐 14 个高价值技能套装，全部经过中文适配并打通了上游追踪链路（`.upstream.yaml`）：
 
-- 🧠 **brainstorming**: 强制实施编码前的需求梳理与设计方案输出
-- 🤖 **browser-use**: 自动化浏览器操作与网页数据抓取
-- 🎨 **ui-ux-pro-max**: 顶级 UI/UX 设计决策与页面生成向导
-- 🧪 **test-driven-development**: 强制执行 TDD (测试驱动开发) 流程与规范
-- 🔍 **requesting-code-review**: 审查与验证已完成的代码实现
-- 🛠️ **frontend-code-review**: 前端代码审查助手（业务逻辑、性能、规范审查）
-- ✨ **frontend-design**: 创建极高设计感/反套路化的前端 UI 界面
-- ⚡ **vercel-react-best-practices**: Vercel 官方级 React/Next.js 代码性能优化与最佳实践
-- 🌐 **web-design-guidelines**: 依据 Vercel Web Interface Guidelines 进行访问性和设计审查
-- 🧰 **fullstack-developer**: 全栈 Web 开发者专家知识体系（React/Next/Node/DB）
-- 🎭 **webapp-testing**: 利用 Playwright 对 Web 应用进行自动化交互测试
-- 🕵️ **find-skills**: 帮助用户发现和安装生态系统中的技能
-- 📥 **skill-installer**: 从精选列表或 GitHub 自动寻找并安装外部技能
-- 🏗️ **skill-creator**: 创建和更新有效 Agent 技能的标准工作流模板
+### 🛡️ 流程管控（🔒 强制 — 对应阶段自动触发）
+- **brainstorming** — 强制实施编码前的需求梳理与设计方案输出
+- **test-driven-development** — 强制执行 TDD (测试驱动开发) 流程与规范
+- **requesting-code-review** — 审查与验证已完成的代码实现
+
+### 🎨 前端与设计（📌 按需）
+- **frontend-design** — 创建极高设计感/反套路化的前端 UI 界面
+- **ui-ux-pro-max** — 顶级 UI/UX 设计决策与页面生成向导
+- **web-design-guidelines** — 依据 Vercel Web Interface Guidelines 进行访问性和设计审查
+- **vercel-react-best-practices** — Vercel 官方级 React/Next.js 代码性能优化与最佳实践
+
+### 🔍 代码质量（📌 按需）
+- **frontend-code-review** — 前端代码审查助手（业务逻辑、性能、规范审查）
+
+### 🌐 全栈开发（📌 按需）
+- **fullstack-developer** — 全栈 Web 开发者专家知识体系（React/Next/Node/DB）
+
+### 🧪 测试与自动化（📌 按需）
+- **webapp-testing** — 利用 Playwright 对 Web 应用进行自动化交互测试
+- **browser-use** — 自动化浏览器操作与网页数据抓取
+
+### ⚙️ 技能管理（📌 按需）
+- **skill-creator** — 创建和更新有效 Agent 技能的标准工作流模板
+- **skill-installer** — 从精选列表或 GitHub 自动寻找并安装外部技能
+- **find-skills** — 帮助用户发现和安装生态系统中的技能
 
 ## 核心目录结构
 
