@@ -35,3 +35,8 @@
 - **webapp-testing**: 利用 Playwright 对 Web 应用程序进行本地自动化交互和测试。 -> 详见 skills/webapp-testing/SKILL.md
 - **frontend-code-review**: 前端代码审查助手。涵盖业务逻辑、组件性能及架构规范检查。 -> 详见 skills/frontend-code-review/SKILL.md
 - **fullstack-developer**: 提供涵盖 React、Node.js 及数据库的全栈 Web 开发专家级知识体系。 -> 详见 skills/fullstack-developer/SKILL.md
+- **brainstorming**: 强制实施编码前的需求梳理与设计方案输出。 -> 详见 skills/brainstorming/SKILL.md
+- **browser-use**: 自动化浏览器操作与网页数据抓取。 -> 详见 skills/browser-use/SKILL.md
+- **ui-ux-pro-max**: 顶级 UI/UX 设计决策与页面生成向导。 -> 详见 skills/ui-ux-pro-max/SKILL.md
+- **test-driven-development**: 强制执行 TDD (测试驱动开发) 流程与规范。 -> 详见 skills/test-driven-development/SKILL.md
+- **requesting-code-review**: 审查与验证已完成的代码实现。 -> 详见 skills/requesting-code-review/SKILL.md
