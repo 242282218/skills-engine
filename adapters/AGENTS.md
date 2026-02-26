@@ -2,26 +2,21 @@
 
 > 整合自 `skills-engine`，部署到项目后自动生效。
 
-## 执行框架
+## 执行框架与规则
 
-先想后做 → 只问一个问题 → 小步执行 → 做完验证 → 简短说明结果。
+- 执行流程：`.skills-engine/core/AGENT.md`
+- 个人规则细则：`.skills-engine/core/RULES.md`
+- 编码约定与技术选型：`.skills-engine/core/CONVENTIONS.md`
 
-流程：理解任务 → 有疑问给选项+问一个 → 说方案 → 等确认 → 执行 → 报告（改了什么/在哪/怎么验证）。
+**核心要点**：先说方案再动手；只问一个问题；小步执行每步验证；不动范围外文件；卡住换策略不中止。
 
-执行中：小步推进；失败就最小修复；不动任务范围外的文件；卡住换策略不中止。
-
-## 规则
-
-详见 `.skills-engine/core/RULES.md`（个人细则持续补充中）。
-
-## 编码约定
+## 编码约定摘要
 
 - Python: `uv` + `ruff` + `pyright`，`src/` layout，`pyproject.toml` 统一配置
 - TypeScript: Node.js 22+，`pnpm`，`strict: true`，ESM 优先
 - 安全：禁止硬编码密钥；所有外部输入必须验证；依赖锁定版本
 - Git: Conventional Commits；不提交 `.env` 和构建产物
 
-详见 `.skills-engine/core/CONVENTIONS.md`。
 
 ## 可用技能
 

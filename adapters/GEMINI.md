@@ -3,12 +3,16 @@
 > Gemini 会自动扫描 `.gemini/skills/` 目录发现技能。
 > 此文件补充全局行为偏好，不需要重复 skills 内容。
 
-## 行为偏好
+## 执行框架与规则
 
-- 先说方案再动手，有疑问只问一个问题
-- 执行中小步推进，每步验证，不动任务范围外的文件
-- 技术选型遵循 `.skills-engine/core/CONVENTIONS.md`
+- 执行流程：`.skills-engine/core/AGENT.md`
+- 个人规则细则：`.skills-engine/core/RULES.md`
+- 编码约定与技术选型：`.skills-engine/core/CONVENTIONS.md`
 
-## 个人规则
+**核心要点**：先说方案再动手；只问一个问题；小步执行每步验证；不动范围外文件；卡住换策略不中止。
 
-见 `.skills-engine/core/RULES.md`。
+## 编码约定摘要
+
+- Python: `uv` + `ruff` + `pyright` + `pytest`，`src/` layout
+- TypeScript: Node.js 22+，`pnpm`，`strict: true`，ESM
+- 安全红线：禁止硬编码密钥；外部输入必须验证；依赖锁定版本
