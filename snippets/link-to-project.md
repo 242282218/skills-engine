@@ -25,14 +25,18 @@
    - GEMINI.md  ← 复制 adapters/GEMINI.md
 5. 为 Gemini 建立技能目录（如果项目使用 Gemini）：
    - 将 .skills-engine/skills/ 下的所有技能目录复制到 .gemini/skills/
-6. 将以下内容追加到 .gitignore（如果不存在则创建）：
+6. 为 Trae 建立规则和技能目录（如果项目使用 Trae）：
+   - 创建 .trae/rules/ 目录，将 AGENTS.md 复制为 .trae/rules/project_rules.md
+   - 创建 .trae/skills/ 目录，将 .skills-engine/skills/ 下的所有技能目录复制到 .trae/skills/
+7. 将以下内容追加到 .gitignore（如果不存在则创建）：
    .skills-engine/
    CLAUDE.md
    AGENTS.md
    GEMINI.md
    .gemini/skills/
-7. 清理临时目录
-8. 告诉我部署了哪些文件
+   .trae/
+8. 清理临时目录
+9. 告诉我部署了哪些文件
 
 注意：不要覆盖项目中已存在的同名文件，如果有冲突先问我。
 ```
@@ -57,8 +61,11 @@
    - AGENTS.md（用 adapters/AGENTS.md 替换）
    - GEMINI.md（用 adapters/GEMINI.md 替换）
 3. 如果项目使用 Gemini，同步更新 .gemini/skills/
-4. 清理临时目录
-5. 告诉我更新了哪些文件，哪些有变化
+4. 如果项目使用 Trae，同步更新：
+   - .trae/rules/project_rules.md（用 AGENTS.md 内容替换）
+   - .trae/skills/（用 .skills-engine/skills/ 内容替换）
+5. 清理临时目录
+6. 告诉我更新了哪些文件，哪些有变化
 ```
 
 ---
@@ -80,6 +87,10 @@ your-project/
 │   ├── snippets/             ← 提示词模板
 │   └── templates/            ← 文档模板
 ├── .gemini/skills/           ← Gemini 专用（从 .skills-engine/skills/ 复制）
+├── .trae/                    ← Trae 专用
+│   ├── rules/
+│   │   └── project_rules.md  ← 项目规则（来自 AGENTS.md）
+│   └── skills/               ← 技能目录（从 .skills-engine/skills/ 复制）
 ├── CLAUDE.md                 ← Claude Code 入口
 ├── AGENTS.md                 ← OpenAI Codex 入口
 └── GEMINI.md                 ← Gemini 入口
