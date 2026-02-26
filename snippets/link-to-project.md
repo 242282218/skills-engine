@@ -28,13 +28,16 @@
 6. 为 Trae 建立规则和技能目录（如果项目使用 Trae）：
    - 创建 .trae/rules/ 目录，将 AGENTS.md 复制为 .trae/rules/project_rules.md
    - 创建 .trae/skills/ 目录，将 .skills-engine/skills/ 下的所有技能目录复制到 .trae/skills/
-7. 将以下内容追加到 .gitignore（如果不存在则创建）：
+7. 为 Lingma（通义灵码）建立规则目录（如果项目使用 Lingma）：
+   - 创建 .lingma/rules/ 目录，将 AGENTS.md 复制为 .lingma/rules/project_rules.md
+8. 将以下内容追加到 .gitignore（如果不存在则创建）：
    .skills-engine/
    CLAUDE.md
    AGENTS.md
    GEMINI.md
    .gemini/skills/
    .trae/
+   .lingma/rules/
 8. 清理临时目录
 9. 告诉我部署了哪些文件
 
@@ -69,8 +72,9 @@
 6. 如果项目使用 Trae，同步更新：
    - .trae/rules/project_rules.md（用 AGENTS.md 内容替换）
    - .trae/skills/（用 .skills-engine/skills/ 内容替换）
-7. 清理临时目录
-8. 告诉我最终更新了哪些文件
+7. 如果项目使用 Lingma，同步更新 .lingma/rules/project_rules.md（用 AGENTS.md 内容替换）
+8. 清理临时目录
+9. 告诉我最终更新了哪些文件
 ```
 
 ---
@@ -96,6 +100,8 @@ your-project/
 │   ├── rules/
 │   │   └── project_rules.md  ← 项目规则（来自 AGENTS.md）
 │   └── skills/               ← 技能目录（从 .skills-engine/skills/ 复制）
+├── .lingma/rules/            ← Lingma（通义灵码）专用
+│   └── project_rules.md      ← 项目规则（来自 AGENTS.md）
 ├── CLAUDE.md                 ← Claude Code 入口
 ├── AGENTS.md                 ← OpenAI Codex 入口
 └── GEMINI.md                 ← Gemini 入口

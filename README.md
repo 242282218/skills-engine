@@ -35,6 +35,7 @@ your-project/
 | **OpenAI Codex CLI** | `AGENTS.md` | 原生支持读取，用于各类 Codex 驱动工具。 |
 | **Gemini CLI / Extension** | `GEMINI.md` | `GEMINI.md` 定义全局偏好，自动扫描 `.gemini/skills/` 提取技能。 |
 | **Trae** | `.trae/rules/project_rules.md` + `.trae/skills/` | 规则文件定义执行框架，技能目录自动发现并注册。 |
+| **Lingma（通义灵码）** | `.lingma/rules/project_rules.md` | 规则文件定义执行框架与编码约定，类型设为 `always` 始终生效。 |
 
 ## 可用技能清单
 
